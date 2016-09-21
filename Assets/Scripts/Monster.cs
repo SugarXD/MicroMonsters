@@ -3,12 +3,11 @@ using System.Collections;
 
 public class Monster : MonoBehaviour {
 	int currentLevel, maxLevel;
-	double currentEXP, maxEXP, multiplier;
+	double currentEXP, maxEXP;
 
 	// Use this for initialization
 	void Start () {
 		currentEXP = 0;
-		multiplier = 1.0;
 	}
 	
 	// Update is called once per frame
@@ -16,7 +15,7 @@ public class Monster : MonoBehaviour {
 	
 	}
 
-	public void increaseEXP(){
+	public void increaseEXP(double multiplier){
 		currentEXP += 1 * multiplier;
 	}
 
@@ -27,9 +26,5 @@ public class Monster : MonoBehaviour {
 	public double getMaxEXP(){
 		return maxEXP;
 	}
-
-	public void setMultiplier(double increment){
-		multiplier += increment;
-		print (multiplier);
-	}
+		
 }
