@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	This is the XML file for all events.
+	Event name: The numeric id associated with the event.
+	Title: The name/title of the event.
+	Description: The text that will appear in the pop-up box when the event occurs.
+	Action: A numeric idea signifiying the type of event....
+	0 - nothing happens
+	1 - add an item to inventory
+	2 - add money
+	3 - apply bonus exp multiplier
+	4 - monster gains levels
+	5 - monster changes skins
+-->
+
+<EventCollection>
+	<Events>
+		<Event name="0">
+			<Title>Dummy Event</Title>
+			<Description>This is a dummy event. Nothing will happen.</Description>
+			<Action>0</Action>
+		</Event>
+			<Event name="1">
+			<Title>Dummy Event</Title>
+			<Description>This is a dummy event1. Nothing will happen.</Description>
+			<Action>0</Action>
+		</Event>
+		<Event name="2">
+			<Title>Dummy Event</Title>
+			<Description>This is a dummy event2. Nothing will happen.</Description>
+			<Action>0</Action>
+		</Event>
+		<Event name="3">
+			<Title>Dummy Event</Title>
+			<Description>This is a dummy event3. Nothing will happen.</Description>
+			<Action>0</Action>
+		</Event>
+	</Events>
+</EventCollection>
