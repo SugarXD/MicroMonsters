@@ -11,6 +11,7 @@ public class Monster : MonoBehaviour {
 		currentEXP = 0;
 		currentLevel = 1;
 		stage = 0;
+		maxEXP = 1000;
 	}
 	
 	// Update is called once per frame
@@ -20,6 +21,14 @@ public class Monster : MonoBehaviour {
 
 	public void increaseEXP(double multiplier){
 		currentEXP += 1 * multiplier;
+		if (currentEXP >= maxEXP) {
+			currentLevel++;
+			maxEXP += 200;
+			currentEXP = 0;
+			//increase Money ammount.
+			GameObject.Find("Main Camera").GetComponent<Player>().increaseCrowns();
+			GameObject.Find ("Main Camera").GetComponent<GUIHandler> ().setCrownsText ();
+		}
 	}
 
 	public double getCurrentEXP(){

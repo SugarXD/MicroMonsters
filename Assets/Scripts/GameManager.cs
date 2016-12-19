@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 /* The GameManager Script will be responsible for all main gameplay mechanics. This includes keeping track of time and issueing commands respective to user input.*/
 
 
@@ -65,6 +65,18 @@ public class GameManager : MonoBehaviour {
 			Event randEvent = ec.getRandomEvent ();
 			Debug.Log (randEvent.name);
 		}
+	}
+
+	public void loadLevel(){
+		SceneManager.LoadScene("MenuScene");
+	}
+
+	public void loadMainScene(){
+		SceneManager.LoadScene ("MainScene");
+	}
+
+	public void loadShopScene(){
+		SceneManager.LoadScene ("ShopScene");
 	}
 
 }
