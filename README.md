@@ -3,13 +3,14 @@ Micro Monsters is a project I created for my Digital Projects class. The game wi
 
 ## Current Highest Priorities:
 
-* Event Generator (XML Based).
-* Gameplay GUI.
+* ~~Event Generator (XML Based).~~
+* ~~Gameplay GUI.~~
+* ~~Polish Github Repo~~
+* Monster Evolution
+* Player/Saved Data
 
 ## Lower Priorities:
-
 * Start Screen
-* Monster Evolutions
 * Shop
 * Freeze Mechanic
-* Polish Github Repo
+
